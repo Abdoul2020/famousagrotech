@@ -34,196 +34,182 @@
 
 <body class="index-page">
 
-  <header id="header" class="header position-relative">
-    <div
-      class="container-fluid container-xl position-relative d-flex flex-wrap align-items-center justify-content-between header-wrapper">
-
-      <a href="index.html" class="logo d-flex align-items-center header-brand">
+  <header id="header" class="header">
+    <div class="container-fluid container-xl header-wrapper">
+      <a href="index.html" class="header-brand">
         <img src="assets/img/logo/famouslogo2.png" alt="Famous Agro Tech">
       </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="language-switcher ms-3">
-        <div class="dropdown">
-          <button class="btn language-toggle d-flex align-items-center gap-1" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="bi bi-translate"></i>
-            <span class="language-code">EN</span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item active" href="#" data-lang="en">English</a></li>
-            <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
-          </ul>
+      <div class="header-right">
+        <div class="language-switcher">
+          <div class="dropdown">
+            <button class="btn language-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-translate"></i>
+              <span class="language-code">EN</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item active" href="#" data-lang="en">English</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
+            </ul>
+          </div>
         </div>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+              <a href="#"><span>About Us</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                <li><a href="about.html#principals-values">Principles & Values</a></li>
+              </ul>
+            </li>
+            <li><a href="services.html">Products</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation menu"></i>
+        </nav>
       </div>
-
     </div>
   </header>
 
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
         <div class="carousel-item active">
-          <img src="assets/img/herosection/banner.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Famous Agro Tech</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
+          <img src="assets/img/herosection/fag_03.png" alt="Famous Agro Tech">
+          <div class="hero-content">
+            <h1>Famous Agro Tech</h1>
+            <p>Quality agricultural solutions for modern farming</p>
+            <div class="hero-cta">
+              <a href="contact.html" class="btn-hero btn-hero-primary">Get a Quote</a>
+              <a href="#services" class="btn-hero btn-hero-outline">Our Services</a>
+            </div>
           </div>
-        </div><!-- End Carousel Item -->
-
+        </div>
         <div class="carousel-item">
-          <img src="assets/img/herosection/banner.jpg" alt="">
-
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/herosection/banner.jpg" alt="">
-          <div class="carousel-container">
-            <h2>famous Agro Tech</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-              fugit.</p>
+          <img src="assets/img/herosection/fag_02.png" alt="Agricultural Solutions">
+          <div class="hero-content">
+            <h1>Famous Agro Tech</h1>
+            <p>Quality agricultural solutions for modern farming</p>
+            <div class="hero-cta">
+              <a href="contact.html" class="btn-hero btn-hero-primary">Get a Quote</a>
+              <a href="#services" class="btn-hero btn-hero-outline">Our Services</a>
+            </div>
           </div>
-        </div><!-- End Carousel Item -->
-
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/herosection/fag_04.png" alt="Farming Excellence">
+          <div class="hero-content">
+            <h1>Famous Agro Tech</h1>
+            <p>Quality agricultural solutions for modern farming</p>
+            <div class="hero-cta">
+              <a href="contact.html" class="btn-hero btn-hero-primary">Get a Quote</a>
+              <a href="#services" class="btn-hero btn-hero-outline">Our Services</a>
+            </div>
+          </div>
+        </div>
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
-
         <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a>
-
         <ol class="carousel-indicators"></ol>
-
       </div>
-
     </section><!-- /Hero Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section modern">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>SERVICES</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div><!-- End Section Title -->
-
-      <div class="content services-modern">
-        <div class="container">
-          <div class="service-grid service-grid-modern">
-            <article class="service-card minimal" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card-top">
-                <span class="service-card-label">Planting</span>
-                <span class="service-number">01</span>
-              </div>
-              <div class="service-card-icon">
-                <i class="bi bi-tree-fill"></i>
-              </div>
-              <h3 class="service-card-title">Precision Planting</h3>
-              <p class="service-card-text">Lorem, ipsum dolor..</p>
-
-            </article>
-            <article class="service-card minimal" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card-top">
-                <span class="service-card-label">Soil</span>
-                <span class="service-number">02</span>
-              </div>
-              <div class="service-card-icon">
-                <i class="bi bi-cup-straw"></i>
-              </div>
-              <h3 class="service-card-title">Mulching & Covering</h3>
-              <p class="service-card-text">Lorem ipsum dolor sit amet.</p>
-
-            </article>
-            <article class="service-card minimal" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-card-top">
-                <span class="service-card-label">Tillage</span>
-                <span class="service-number">03</span>
-              </div>
-              <div class="service-card-icon">
-                <i class="bi bi-gear-wide-connected"></i>
-              </div>
-              <h3 class="service-card-title">Field Renewal</h3>
-              <p class="service-card-text">Lorem ipsum dolor sit amet.</p>
-
-            </article>
-            <article class="service-card minimal" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-card-top">
-                <span class="service-card-label">Care</span>
-                <span class="service-number">04</span>
-              </div>
-              <div class="service-card-icon">
-                <i class="bi bi-scissors"></i>
-              </div>
-              <h3 class="service-card-title">Grooming & Mowing</h3>
-              <p class="service-card-text">Lorem ipsum dolor sit.</p>
-
-            </article>
-          </div>
+    <!-- Services Section - Product Showcase -->
+    <section id="services" class="services-showcase section">
+      <div class="container">
+        <div class="showcase-header text-center" data-aos="fade-up">
+          <span class="showcase-label">Products & Services</span>
+          <h2>Our Products & Services</h2>
+          <p style="font-size: 0.85rem;">Animal feed manufacturing, agro-food units, technical assistance, and
+            integrated project development</p>
         </div>
-      </div>
+        <div class="services-showcase-grid">
+          <a href="services.html" class="showcase-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="showcase-card-image">
+              <img src="assets/img/fag_01.jpeg" alt="Poultry Feed">
+              <div class="showcase-card-overlay">
+                <span class="showcase-card-cta">Learn more</span>
+              </div>
+            </div>
+            <div class="showcase-card-content">
+              <span class="showcase-card-tag">Feed</span>
+              <h3>Poultry Feed</h3>
+              <p>High-performance feed for chicks, broilers, and layers</p>
+            </div>
+          </a>
+          <a href="services.html" class="showcase-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="showcase-card-image">
+              <img src="assets/img/fag_02.jpeg" alt="Ruminant Feed">
+              <div class="showcase-card-overlay">
+                <span class="showcase-card-cta">Learn more</span>
+              </div>
+            </div>
+            <div class="showcase-card-content">
+              <span class="showcase-card-tag">Feed</span>
+              <h3>Ruminant Feed</h3>
+              <p>Balanced feed to improve productivity and profitability</p>
+            </div>
+          </a>
+          <a href="services.html" class="showcase-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="showcase-card-image">
+              <img src="assets/img/fag_03.jpeg" alt="Technical Assistance">
+              <div class="showcase-card-overlay">
+                <span class="showcase-card-cta">Learn more</span>
+              </div>
+            </div>
+            <div class="showcase-card-content">
+              <span class="showcase-card-tag">Support</span>
+              <h3>Technical Assistance</h3>
+              <p>Expert support for livestock farmers and sector stakeholders</p>
+            </div>
+          </a>
+          <a href="services.html" class="showcase-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="showcase-card-image">
+              <img src="assets/img/fag_04.jpeg" alt="Integrated Projects">
+              <div class="showcase-card-overlay">
+                <span class="showcase-card-cta">Learn more</span>
+              </div>
+            </div>
+            <div class="showcase-card-content">
+              <span class="showcase-card-tag">Projects</span>
+              <h3>Integrated Projects</h3>
+              <p>Agro-food units and development initiatives</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="showcase-footer text-center" data-aos="fade-up">
+          <a href="services.html" class="btn btn-showcase">View All Products</a>
+        </div>
       </div>
     </section><!-- /Services Section -->
 
-    <!-- About Section -->
+    <!-- About Section - Why Choose Us -->
     <section id="about" class="about section mt-5">
-
       <div class="content">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <img src="assets/img/farm-img/01.jpg" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0" data-aos="zoom-out">
+              <img src="assets/img/farm-img/01.jpg" alt="Famous AgroTech" class="img-fluid about-img">
             </div>
-            <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="content-subtitle text-white opacity-50">Why Choose Us</h3>
-              <h2 class="content-title mb-4">
-                More than <strong>5 year experience</strong> in agriculture
-                industry
-              </h2>
-              <p class="opacity-50 mb-3">
-                Precision farming, modern irrigation, and market-ready planning keep our partners
-                ahead of the seasonal curve.
-              </p>
-
-              <div class="row row-cols-1 row-cols-sm-2 g-3 mt-3">
-                <div class="col">
-                  <div
-                    class="d-flex gap-3 align-items-start p-3 rounded-4 border border-white border-opacity-25 bg-white bg-opacity-10 h-100 shadow-sm">
-                    <div class="display-6 text-primary">
-                      <i class="bi bi-cloud-rain"></i>
-                    </div>
-                    <div>
-                      <h4 class="h5 text-white mb-2">Plants need rain</h4>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div
-                    class="d-flex gap-3 align-items-start p-3 rounded-4 border border-white border-opacity-25 bg-white bg-opacity-10 h-100 shadow-sm">
-                    <div class="display-6 text-primary">
-                      <i class="bi bi-heart"></i>
-                    </div>
-                    <div>
-                      <h4 class="h5 text-white mb-2">Love organic foods</h4>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
+              <span class="about-label">Why work with us</span>
+              <h2 class="about-title">Trusted partner for livestock farmers</h2>
+              <p class="about-intro">High-performance feed, technical support, and sustainable value for poultry and
+                ruminant sectors.</p>
+              <ul class="about-reasons">
+                <li><i class="bi bi-award"></i> Quality formulations for productivity</li>
+                <li><i class="bi bi-headset"></i> Technical assistance to farmers</li>
+                <li><i class="bi bi-globe2"></i> Local resource valorization</li>
+                <li><i class="bi bi-shield-check"></i> Consistent quality & reliability</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -231,33 +217,37 @@
     </section><!-- /About Section -->
 
     <!-- About 3 Section -->
-    <section id="about-3" class="about-3 section">
-
+    <section id="about-3" class="about-3 section light-background">
       <div class="container">
         <div class="row gy-4 justify-content-between align-items-center">
-          <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-            <img src="assets/img/farm-img/01.jpg" alt="Image" class="img-fluid">
-            <a href="https://www.youtube.com/watch?v=DRjX6DCIn3I" class="glightbox pulsating-play-btn">
-              <span class="play"><i class="bi bi-play-fill"></i></span>
-            </a>
+          <div class="col-lg-6 order-lg-2" data-aos="zoom-out">
+            <div class="about-3-image-wrap">
+              <img src="assets/img/farm-img/01.jpg" alt="Famous AgroTech" class="img-fluid">
+              <a href="https://www.youtube.com/watch?v=DRjX6DCIn3I" class="glightbox pulsating-play-btn">
+                <span class="play"><i class="bi bi-play-fill"></i></span>
+              </a>
+            </div>
           </div>
           <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="content-subtitle text-primary" style="color: #3b941e !important;">Famous </h3>
-            <h2 class="content-title mb-3" style="color: #ff9f05;">AgroTech</h2>
-            <p class="mb-4">
-              We combine data-driven insights with hands-on agronomy to keep every
-              season efficient, resilient, and productive. Every field plan reflects
-              climate-smart practices, expert scouting, and continuous learning.
-            </p>
-            <ul class="list-unstyled list-check mb-5">
-              <li>Satellite-backed soil health diagnostics</li>
-              <li>Automated irrigation scheduling with live monitoring</li>
-              <li>Farm-to-market traceability for every harvest</li>
-            </ul>
-
-            <div class="mt-5">
-              <a href="#" class="btn-cta me-3">Get a Quote</a>
-              <a href="#services" class="text-white text-decoration-underline">Explore our services</a>
+            <div class="about-3-content">
+              <h2 class="about-3-title">
+                <span class="about-3-brand" style="color: #3b941e;">Famous </span>
+                <span class="about-3-brand-accent" style="color: #ff9f05;">AgroTech</span>
+              </h2>
+              <p class="about-3-subtitle">Agri-industry & Animal Nutrition</p>
+              <p class="about-3-text">
+                Famous AgroTech is an agri-industrial company specializing in the production of animal feed, the
+                processing of agricultural raw materials, and the development of high-performance nutritional solutions
+                for the poultry and ruminant sectors.
+              </p>
+              <p class="about-3-text">
+                Founded in 2025 by a team of internationally trained engineers, the company relies on advanced technical
+                expertise and an industrial vision focused on valorizing local resources and creating sustainable value.
+              </p>
+              <div class="about-3-cta">
+                <a href="contact.html" class="btn-cta me-3">Get a Quote</a>
+                <a href="#services" class="about-3-link">Explore our products</a>
+              </div>
             </div>
           </div>
         </div>
@@ -267,9 +257,12 @@
     <!-- Services 2 Section -->
     <section id="services-2" class="services-2 section dark-background">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2> Our Deliver Foods</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
+      <div class="container section-title section-title-with-link" data-aos="fade-up">
+        <div>
+          <h2>Our Projects</h2>
+          <p>Explore our range of agricultural solutions designed for modern farming</p>
+        </div>
+        <a href="references.html" class="services-2-link">View All Projects <i class="bi bi-arrow-right"></i></a>
       </div><!-- End Section Title -->
 
       <div class="services-carousel-wrap">
@@ -314,57 +307,56 @@
               <div class="swiper-slide">
                 <div class="service-item">
                   <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Planting</h2>
+                    <a href="references.html">
+                      <span class="service-item-category">Project</span>
+                      <h2 class="service-item-title">Poultry Feed Production</h2>
                     </a>
                   </div>
-                  <img src="assets/img/farm-img/01.jpg" alt="Image" class="img-fluid">
+                  <img src="assets/img/fag_01.jpeg" alt="Poultry Feed Production" class="img-fluid">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="service-item">
                   <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Mulching</h2>
+                    <a href="references.html">
+                      <span class="service-item-category">Project</span>
+                      <h2 class="service-item-title">Ruminant Feed Program</h2>
                     </a>
                   </div>
-                  <img src="assets/img/farm-img/01.jpg" alt="Image" class="img-fluid">
+                  <img src="assets/img/fag_02.jpeg" alt="Ruminant Feed Program" class="img-fluid">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="service-item">
                   <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Watering</h2>
+                    <a href="references.html">
+                      <span class="service-item-category">Project</span>
+                      <h2 class="service-item-title">Technical Assistance</h2>
                     </a>
                   </div>
-                  <img src="assets/img/farm-img/01.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Fertilizing</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/farm-img/01.jpg" alt="Image" class="img-fluid">
+                  <img src="assets/img/fag_03.jpeg" alt="Technical Assistance" class="img-fluid">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="service-item">
                   <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Harvesting</h2>
+                    <a href="references.html">
+                      <span class="service-item-category">Project</span>
+                      <h2 class="service-item-title">Agro-Food Unit</h2>
                     </a>
                   </div>
-                  <img src="assets/img/farm-img/01.jpg" alt="Image" class="img-fluid">
+                  <img src="assets/img/fag_04.jpeg" alt="Agro-Food Unit" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="service-item-contents">
+                    <a href="references.html">
+                      <span class="service-item-category">Project</span>
+                      <h2 class="service-item-title">Integrated Development</h2>
+                    </a>
+                  </div>
+                  <img src="assets/img/farm-img/01.jpg" alt="Integrated Development" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -372,39 +364,106 @@
           </div>
         </div>
       </div>
+      <div class="container text-center mt-4" data-aos="fade-up">
+        <a href="references.html" class="btn-services-2">View All Projects</a>
+      </div>
     </section><!-- /Services 2 Section -->
 
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
+    <!-- References & Partnerships Carousel -->
+    <section id="references" class="references-carousel section">
+      <div class="container">
+        <p class="references-label">References & Partnerships</p>
+        <div class="swiper init-swiper references-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": { "delay": 2500 },
+              "slidesPerView": 5,
+              "spaceBetween": 24,
+              "breakpoints": {
+                "320": { "slidesPerView": 2, "spaceBetween": 16 },
+                "576": { "slidesPerView": 3, "spaceBetween": 20 },
+                "992": { "slidesPerView": 4, "spaceBetween": 24 },
+                "1200": { "slidesPerView": 5, "spaceBetween": 24 }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="references.html" class="ref-item"><img
+                  src="https://benisonmedia.com/wp-content/uploads/2019/06/061719_Kemin-rebrand_Lead.png"
+                  alt="DSM - Animal Nutrition"></a></div>
+            <div class="swiper-slide"><a href="references.html" class="ref-item"><img
+                  src="https://logowik.com/content/uploads/images/yayla-bakliyat1880.jpg"
+                  alt="Evonik - Animal Nutrition"></a></div>
+            <div class="swiper-slide"><a href="references.html" class="ref-item"><img
+                  src="https://www.cargill.com.tr/image/1432080092113/cargill-color-logo.jpg?v=1732612277000"
+                  alt="Cargill - Feed & Nutrition"></a></div>
+            <div class="swiper-slide"><a href="references.html" class="ref-item"><img
+                  src="https://www.world-grain.com/ext/resources/Article-Images/2020/01/ADM_NEW-LOGO_USE_Photo-cred-ADM_E.webp?height=667&t=1698697384&width=1080"
+                  alt="ADM - Agri-Industry"></a></div>
+            <div class="swiper-slide"><a href="references.html" class="ref-item"><img
+                  src="https://www.nutreco.com/contentassets/8a7a92daafc145f9a86037ff5dcc128c/screenshot-2021-02-03-at-13.47.28.png?v=4900de&width=1500"
+                  alt="Nutreco - Animal Nutrition"></a></div>
+            <div class="swiper-slide"><a href="references-fr.html" class="ref-item"><img src="https://logowik.com/content/uploads/images/yayla-bakliyat1880.jpg" alt="Evonik - Nutrition animale"></a></div>
 
-      <div class="content">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h3>Subscribe </h3>
-              <p class="opacity-50">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-            <div class="col-lg-6">
-              <form action="forms/newsletter.php" class="form-subscribe php-email-form">
-                <div class="form-group d-flex align-items-stretch">
-                  <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail">
-                  <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
-                </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your subscription request has been sent. Thank you!
-                </div>
-              </form>
-            </div>
+            <div class="swiper-slide"><a href="references.html" class="ref-item"><img
+              src="https://www.cargill.com.tr/image/1432080092113/cargill-color-logo.jpg?v=1732612277000"
+              alt="Cargill - Feed & Nutrition"></a></div>
           </div>
         </div>
       </div>
-    </section><!-- /Call To Action Section -->
+    </section><!-- /References Carousel -->
 
+
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="recent-posts section">
+      <div class="container">
+        <div class="recent-posts-header">
+          <h3>Recent Posts / Blog</h3>
+          <a href="blog.html" class="recent-posts-link">View all</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/fag_01.jpeg" alt="Poultry feed formulation">
+                <span class="post-card-date">Jan 15</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Best practices for poultry feed formulation</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/fag_02.jpeg" alt="Ruminant nutrition">
+                <span class="post-card-date">Jan 08</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Improving ruminant productivity with balanced nutrition</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/fag_03.jpeg" alt="Technical support for farmers">
+                <span class="post-card-date">Dec 22</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Technical support for livestock farmers in West Africa</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Recent Posts Section -->
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -416,9 +475,9 @@
             <a href="index.html" class="logo d-flex align-items-center mb-3">
               <span class="sitename">Famous AGROTECH</span>
             </a>
-            <p class="mb-1"><strong>Office</strong> Zongo, Cotonou</p>
-            <p><strong>Email</strong> <a href="mailto:hello@famousagrotech.com"
-                class="text-white">info@famousagrotech.com</a></p>
+            <p class="mb-1"><strong>Office :</strong> Cotonou/ Benin Republic</p>
+            <p><strong>Email :</strong> <a href="mailto:contact@famousagrotech.com"
+                class="text-white">contact@famousagrotech.com</a></p>
           </div>
 
           <div
@@ -426,22 +485,18 @@
             <h4 class="" style="text-align: left !important;">Connect with us</h4>
             <div class="social-links d-flex justify-content-center gap-3 mt-3 mb-3 pb-2"
               style="justify-content: left !important;">
-              <a href="#"
-                class="d-flex align-items-center justify-content-center rounded-circle bg-white bg-opacity-10 text-white"
-                aria-label="Twitter">
-                <i class="bi bi-twitter-x"></i>
-              </a>
-              <a href="#"
+
+              <a href="https://www.instagram.com/famous_agrotech" target="_blank" rel="noreferrer"
                 class="d-flex align-items-center justify-content-center rounded-circle bg-white bg-opacity-10 text-white"
                 aria-label="Facebook">
                 <i class="bi bi-facebook"></i>
               </a>
-              <a href="#"
+              <a href="https://www.instagram.com/famous_agrotech" target="_blank" rel="noreferrer"
                 class="d-flex align-items-center justify-content-center rounded-circle bg-white bg-opacity-10 text-white"
                 aria-label="Instagram">
                 <i class="bi bi-instagram"></i>
               </a>
-              <a href="#"
+              <a href="https://www.instagram.com/famous_agrotech" target="_blank" rel="noreferrer"
                 class="d-flex align-items-center justify-content-center rounded-circle bg-white bg-opacity-10 text-white"
                 aria-label="LinkedIn">
                 <i class="bi bi-linkedin"></i>
@@ -464,11 +519,12 @@
   </footer>
 
   <div class="floating-contact-widget" aria-label="Quick contact">
-    <a href="tel:+905377724295" class="contact-btn call-btn" aria-label="Call Famous Agro Tech">
-      <span>Hemen Ara</span>
+    <a href="tel:+22953375609" class="contact-btn call-btn" aria-label="Call Famous Agro Tech">
+      <span>Call Now</span>
       <i class="bi bi-telephone"></i>
     </a>
-    <a href="https://wa.me/22912345678" target="_blank" rel="noreferrer" class="contact-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/+22953375609" target="_blank" rel="noreferrer" class="contact-btn whatsapp-btn"
+      aria-label="Chat on WhatsApp">
       <span>WhatsApp</span>
       <i class="bi bi-whatsapp"></i>
     </a>
@@ -490,6 +546,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/language.js"></script>
 
 </body>
 

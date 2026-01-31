@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title> Famous Agro tech</title>
+  <title> Famous Agro tech - Blog</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -32,7 +33,7 @@
 
 </head>
 
-<body class="contact-page">
+<body class="blog-page">
 
   <header id="header" class="header">
     <div class="container-fluid container-xl header-wrapper">
@@ -65,8 +66,8 @@
             </li>
             <li><a href="services.html">Products</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation menu"></i>
         </nav>
@@ -77,62 +78,116 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+    <div class="page-title dark-background" data-aos="fade"
+      style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>Contact</h1>
+        <h1>Blog</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li class="current">Blog</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section contact-compact">
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="recent-posts section">
       <div class="container">
-
-        <div class="contact-compact-inner">
-          <div class="contact-info-compact">
-            <h3 class="contact-compact-title">Get in touch</h3>
-            <p class="contact-compact-desc">We'd love to hear from you.</p>
-            <div class="contact-info-list">
-              <a href="https://maps.google.com/?q=Calavi,Cotonou,Benin" target="_blank" rel="noreferrer" class="contact-info-item">
-                <i class="bi bi-geo-alt"></i>
-                <span>Cotonou/ Benin Republic</span>
-              </a>
-              <a href="mailto:contact@famousagrotech.com" class="contact-info-item">
-                <i class="bi bi-envelope"></i>
-                <span>contact@famousagrotech.com</span>
-              </a>
-              <a href="tel:+22953375609" class="contact-info-item">
-                <i class="bi bi-telephone"></i>
-                <span>+229 53 37 56 09</span>
-              </a>
-            </div>
-          </div>
-
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form contact-form-compact">
-            <div class="form-row-compact">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Name" required="">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
-            </div>
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-            <textarea class="form-control" name="message" placeholder="Message" required="" rows="4"></textarea>
-            <div class="form-messages">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <button type="submit" class="btn-submit-compact">Send Message</button>
-          </form>
+        <div class="recent-posts-header">
+          <h2>Latest Articles</h2>
+          <span class="recent-posts-subtitle">Insights on animal nutrition and agri-industry</span>
         </div>
-
+        <div class="row g-4" id="blog-posts-grid">
+          <div class="col-12 col-sm-6 col-lg-4 blog-post-item" data-page="1">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/fag_01.jpeg" alt="Poultry feed formulation">
+                <span class="post-card-date">Jan 15</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Best practices for poultry feed formulation</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 blog-post-item" data-page="1">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/fag_02.jpeg" alt="Ruminant nutrition">
+                <span class="post-card-date">Jan 08</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Improving ruminant productivity with balanced nutrition</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 blog-post-item" data-page="1">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/fag_03.jpeg" alt="Technical support for farmers">
+                <span class="post-card-date">Dec 22</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Technical support for livestock farmers in West Africa</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 blog-post-item" data-page="2">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/fag_04.jpeg" alt="Local resource valorization">
+                <span class="post-card-date">Dec 12</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Local resource valorization in animal feed production</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 blog-post-item" data-page="2">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/farm-img/01.jpg" alt="Quality standards in feed">
+                <span class="post-card-date">Dec 05</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Quality standards in feed manufacturing</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 blog-post-item" data-page="2">
+            <a href="blog-details.html" class="post-card">
+              <div class="post-card-img">
+                <img src="assets/img/farm-img/02.jpg" alt="Sustainable agri-industry">
+                <span class="post-card-date">Nov 28</span>
+              </div>
+              <div class="post-card-body">
+                <h3>Sustainable solutions for West African agri-industry</h3>
+                <span class="post-card-more">Read more <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-    </section><!-- /Contact Section -->
+    </section><!-- /Blog Posts Section -->
 
-    
+    <!-- Blog Pagination Section -->
+    <section id="blog-pagination" class="blog-pagination section">
+      <div class="container">
+        <nav class="pagination-nav" aria-label="Blog pagination">
+          <ul class="pagination-list">
+            <li><a href="#" class="pagination-prev" aria-label="Previous page"><i class="bi bi-chevron-left"></i></a></li>
+            <li><a href="#" class="pagination-page active" data-page="1">1</a></li>
+            <li><a href="#" class="pagination-page" data-page="2">2</a></li>
+            <li><a href="#" class="pagination-next" aria-label="Next page"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section><!-- /Blog Pagination Section -->
 
   </main>
 

@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="contact-page">
+<body class="blog-details-page">
 
   <header id="header" class="header">
     <div class="container-fluid container-xl header-wrapper">
@@ -65,8 +65,8 @@
             </li>
             <li><a href="services.html">Products</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation menu"></i>
         </nav>
@@ -79,60 +79,85 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>Contact</h1>
+        <a href="blog.html" class="back-to-blog"><i class="bi bi-arrow-left"></i> Back to Blog</a>
+        <h1>Blog Details</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="current">Post</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section contact-compact">
-      <div class="container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 col-xl-7">
 
-        <div class="contact-compact-inner">
-          <div class="contact-info-compact">
-            <h3 class="contact-compact-title">Get in touch</h3>
-            <p class="contact-compact-desc">We'd love to hear from you.</p>
-            <div class="contact-info-list">
-              <a href="https://maps.google.com/?q=Calavi,Cotonou,Benin" target="_blank" rel="noreferrer" class="contact-info-item">
-                <i class="bi bi-geo-alt"></i>
-                <span>Cotonou/ Benin Republic</span>
-              </a>
-              <a href="mailto:contact@famousagrotech.com" class="contact-info-item">
-                <i class="bi bi-envelope"></i>
-                <span>contact@famousagrotech.com</span>
-              </a>
-              <a href="tel:+22953375609" class="contact-info-item">
-                <i class="bi bi-telephone"></i>
-                <span>+229 53 37 56 09</span>
-              </a>
-            </div>
-          </div>
+          <!-- Blog Details Section -->
+          <section id="blog-details" class="blog-details section">
+            <article class="article">
 
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form contact-form-compact">
-            <div class="form-row-compact">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Name" required="">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
-            </div>
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-            <textarea class="form-control" name="message" placeholder="Message" required="" rows="4"></textarea>
-            <div class="form-messages">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <button type="submit" class="btn-submit-compact">Send Message</button>
-          </form>
+                <div class="post-img position-relative overflow-hidden rounded">
+                  <img src="assets/img/fag_01.jpeg" alt="Poultry feed formulation" class="img-fluid">
+                  <span class="post-card-date">Jan 15</span>
+                </div>
+
+                <h2 class="title">Best practices for poultry feed formulation</h2>
+
+                <div class="meta-top">
+                  <span><i class="bi bi-person"></i> Famous AgroTech</span>
+                  <span><i class="bi bi-clock"></i> Jan 15, 2025</span>
+                  <span><i class="bi bi-chat-dots"></i> 0 Comments</span>
+                </div><!-- End meta top -->
+
+                <div class="content">
+                  <p>
+                    High-performance poultry feed requires a balanced approach to nutrition, combining quality raw materials with precise formulations. At Famous AgroTech, we develop feed solutions for chicks, broilers, and layers that support optimal growth, health, and productivity throughout the production cycle.
+                  </p>
+
+                  <p>
+                    The key to successful poultry feed formulation lies in understanding the specific nutritional requirements at each stage of development. Starter feeds for chicks, grower feeds for broilers, and layer feeds for egg production each demand tailored formulations to maximize performance and profitability for farmers.
+                  </p>
+
+                  <blockquote>
+                    <p>
+                      Quality feed formulation is the foundation of successful poultry farming. Investing in balanced nutrition pays dividends in flock health, productivity, and farm profitability.
+                    </p>
+                  </blockquote>
+
+                  <p>
+                    Our formulations leverage local and imported raw materials, ensuring consistent quality while supporting the valorization of West African agricultural resources. Technical support accompanies every product, helping farmers optimize feeding programs and achieve their production goals.
+                  </p>
+
+                  <h3>Technical support for farmers</h3>
+                  <p>
+                    Beyond product delivery, Famous AgroTech provides technical assistance to poultry farmers across the region. Our team supports farmers with feeding recommendations, flock management advice, and troubleshooting to address common challenges in poultry production.
+                  </p>
+                  <img src="assets/img/fag_03.jpeg" alt="Technical support for livestock farmers" class="img-fluid">
+
+                  <h3>Quality and sustainability</h3>
+                  <p>
+                    We are committed to sustainable practices in feed manufacturing, from sourcing to production. Our quality standards ensure that every batch meets rigorous specifications, giving farmers confidence in the feed they provide to their flocks.
+                  </p>
+
+                </div><!-- End post content -->
+
+                <div class="meta-bottom">
+                  <span><i class="bi bi-folder"></i> <a href="#">Animal Nutrition</a></span>
+                  <span><i class="bi bi-tags"></i> Poultry, Feed, Nutrition, West Africa</span>
+                </div><!-- End meta bottom -->
+
+            </article>
+          </section><!-- /Blog Details Section -->
+
         </div>
 
-      </div>
-    </section><!-- /Contact Section -->
+        
 
-    
+      </div>
+    </div>
 
   </main>
 
