@@ -256,7 +256,7 @@ body.mobile-nav-active #header {
 }
 
 .header-brand img {
-  max-height: 64px;
+  max-height: 88px;
   width: auto;
 }
 
@@ -265,6 +265,29 @@ body.mobile-nav-active #header {
   align-items: center;
   gap: 0.5rem;
   margin-left: auto;
+}
+
+.catalogue-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.catalogue-btn:hover,
+.catalogue-btn:focus-visible {
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  text-decoration: none;
 }
 
 .language-switcher {
@@ -482,10 +505,15 @@ body.mobile-nav-active #header {
   }
 
   .header-brand img {
-    max-height: 52px;
+    max-height: 72px;
   }
 
   .language-toggle {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .catalogue-btn {
     padding: 0.3rem 0.5rem;
     font-size: 0.75rem;
   }
@@ -981,7 +1009,8 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:revert;
+  object-position: center;
   z-index: 1;
 }
 

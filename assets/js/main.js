@@ -141,6 +141,18 @@
   window.addEventListener('load', aosInit);
 
   /**
+   * Hero carousel - auto-slide every 5 seconds
+   */
+  const heroCarouselEl = document.querySelector('#hero-carousel');
+  if (heroCarouselEl && typeof bootstrap !== 'undefined') {
+    new bootstrap.Carousel(heroCarouselEl, {
+      interval: 5000,
+      ride: 'carousel',
+      wrap: true
+    });
+  }
+
+  /**
    * Auto generate the carousel indicators
    */
   document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => {
