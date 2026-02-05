@@ -3394,6 +3394,18 @@ section,
   margin-bottom: 0.75rem;
 }
 
+.contact-form-compact .form-messages .loading,
+.contact-form-compact .form-messages .error-message,
+.contact-form-compact .form-messages .sent-message {
+  display: none;
+}
+
+.contact-form-compact .form-messages .loading.show,
+.contact-form-compact .form-messages .error-message.show,
+.contact-form-compact .form-messages .sent-message.show {
+  display: block;
+}
+
 .contact-form-compact .btn-submit-compact {
   background: var(--accent-color);
   color: var(--contrast-color);
