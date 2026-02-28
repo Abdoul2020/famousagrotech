@@ -85,16 +85,43 @@
   });
 
   /**
-   * Toggle mobile nav dropdowns
+   * Toggle mobile nav dropdowns (chevron or full row click)
    */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
       e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      const anchor = this.parentNode;
+      const submenu = anchor.nextElementSibling;
+      if (submenu) {
+        anchor.classList.toggle('active');
+        submenu.classList.toggle('dropdown-active');
+      }
       e.stopImmediatePropagation();
     });
   });
+  /* Click on dropdown anchor (parent of toggle) also toggles on mobile */
+  document.querySelectorAll('.navmenu .dropdown > a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const submenu = this.nextElementSibling;
+      if (submenu && window.innerWidth <= 500) {
+        e.preventDefault();
+        this.classList.toggle('active');
+        submenu.classList.toggle('dropdown-active');
+      }
+    });
+  });
+
+  /**
+   * Scroll to product hash on services page load
+   */
+  if (window.location.hash && document.querySelector(window.location.hash)) {
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const el = document.querySelector(window.location.hash);
+        if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 400);
+    });
+  }
 
   /**
    * Preloader
